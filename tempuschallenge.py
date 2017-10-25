@@ -82,7 +82,6 @@ def tempuschallenge():
 			# get relevant ExAC allele frequency info
 			key = '"allele_freq":'
 			response = requests.get('http://exac.hms.harvard.edu/rest/variant/'+'-'.join(varMetadata)) # query ExAC server for info
-			print 'http://exac.hms.harvard.edu/rest/variant/'+'-'.join(varMetadata)
 			response = response.text.encode('utf-8').split()
 			try:
 				queryIndex = response.index(key)
