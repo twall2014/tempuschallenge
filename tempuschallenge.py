@@ -1,5 +1,4 @@
 import requests
-import os
 from subprocess import call
 
 def tempuschallenge():
